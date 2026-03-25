@@ -8,7 +8,7 @@
     {% for note in notes %}
       <a href="/notes/{{ note.short_id }}" class="note-item">
         <span class="note-title">{{ note.title }}</span>
-        <span class="note-date">{{ note.updated_at }}</span>
+        <time class="note-date" datetime="{{ note.updated_at }}Z">{{ note.updated_at }}</time>
       </a>
     {% endfor %}
   </div>

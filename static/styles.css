@@ -114,7 +114,7 @@ input, textarea {
   color: #ffffff;
   border: 1px solid white;
   padding: 0.4rem 0.75rem;
-  font-size: 14px;
+  font-size: 16px;
   width: 100%;
   border-radius: 0;
 }
@@ -320,6 +320,35 @@ button:hover {
   max-width: 100%;
 }
 
+.markdown-body li:has(> input[type="checkbox"]) {
+  list-style: none;
+  margin-left: -1.5rem;
+}
+
 .markdown-body input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 0;
+  padding: 0;
   margin-right: 6px;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+  cursor: pointer;
+}
+
+.markdown-body input[type="checkbox"]:checked::after {
+  content: '✔︎';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+  color: white;
+  line-height: 1;
+}
 }
