@@ -4,6 +4,9 @@
 
 A minimal notes app
 
+>[!NOTE]
+>OG is now part of [Andromeda](https://github.com/stevedylandev/andromeda)
+
 ## Quickstart
 
 ```bash
